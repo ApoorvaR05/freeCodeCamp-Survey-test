@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Staff's Info</title>
+  </head>
+  <body>
+    <h1 id="title">Staff's Information 2024</h1>
+    <p id="description">All staffs must ensure to fill accurate details</p>
+    <!-- form -->
+    <form id="survey-form">
+      <fieldset>
+        <!-- name -->
+        <label for="name-label">Name <input type="text" placeholder="Juhn Mathew" id="name-label" required></label>
+        <!-- email -->
+        <label for="email-label">Email Id <input type="email" placeholder="abc@gmail.com" id="email-label" required></label>
+        <!-- contactNo -->
+        <label for="number-label">Contact No <input type="number" placeholder="mobile no" id="number-label" min-length="10" max-length="10" required></label>
+        <!-- job role -->
+        <label for="job"> Job Role
+        <select id="dropdown" >
+          <option value="">select</option>
+          <option value="1">Teacher</option>
+          <option value="2">Manager</option>
+          <option value="3">Mentor</option>
+        </select>
+       <legend> Experience more than 1 year</legend>          
+         <label> <input type="radio" value="name" class="inline" />Yes
+          </label>
+        <label> <input type="radio" value="name" class="inline"> No</label>
+        <!-- about -->
+          <label for="about-label">About <textarea type="text" placeholder="About yourself" id="about-label"  required></textarea></label>
+      </fieldset>
+      <!-- submit -->
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
